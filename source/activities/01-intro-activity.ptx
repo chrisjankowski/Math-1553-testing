@@ -20,11 +20,18 @@ a linear combination of <m>u</m> and <m>v</m>.
       </p>
     </statement>
   </exercise>   
+  <solution>
+    <p>
+       False.  For example, in <m>{\bf R}^2</m> take
+        <m>u = v = \begin{pmatrix} 1 \\ 0  \end{pmatrix}</m>
+        and <m>w = \begin{pmatrix} 0 \\ 1  \end{pmatrix}</m>.
+    </p>
+  </solution>
 
   <exercise workspace="2in">
     <statement>
       <p>
-        Find the value of <m>k</m> that makes the following vectors linearly independent:
+        Find the value of <m>k</m> that makes the following vectors linearly dependent:
         <m>\displaystyle
           \left\{
             \begin{pmatrix}
@@ -41,15 +48,27 @@ a linear combination of <m>u</m> and <m>v</m>.
       </p>
     </statement>
   </exercise>
+  <solution>
+    <p>
+        Take the matrix <m>A</m> whose columns are the vectors and row-reduce a
+        bit:
+        <p>
+        <m> \displaystyle
+        A = \begin{pmatrix} -3 \amp 3 \amp 3 \\ 0 \amp -3 \amp -1 \\ 3 \amp k \amp -1
+            \end{pmatrix}
+        \rightarrow
+        \begin{pmatrix} -3 \amp 3 \amp 3 \\ 0 \amp -3 \amp -1 \\ 0 \amp k+3 \amp 2  \end{pmatrix}
+        </m>
+        </p>
+        This matrix will have three pivots unless
+        the second and third rows are multiples of each other.  This means the
+        third row is <m>-2</m> times the second, so <m>-3(-2) = k+3</m>, hence
+        <m>k=3</m>.  Alternatively, the student could have computed <m>\det(A) =
+        9 - 3k</m>, so <m>k=3</m>.
 
-  <exercise workspace="2in">
-    <statement>
-      <p>
-        True or false: If <m>\{u, v, w\}</m> is a set of linearly dependent vectors, then <m>w</m> must be
-a linear combination of <m>u</m> and <m>v</m>.
-      </p>
-    </statement>
-  </exercise>   
+    </p>
+  </solution>
+
 
    <exercise workspace="2in">
     <statement>
@@ -60,7 +79,31 @@ a linear combination of <m>u</m> and <m>v</m>.
     </statement>
   </exercise>    
 
-     <exercise workspace="2in">
+  <solution>
+    <p>
+        <p> True.</p>
+        <p> By the Basis Theorem, any two linearly independent vectors in <m>V</m>
+        will form a basis for <m>V</m>, so we just need to show
+        <m>\{u-v, u+v\}</m> is linearly independent.
+        </p>
+        <p>
+        Suppose <m>x_1(u-v) + x_2(u+v) = 0</m>.  We expand and find
+        <m>(x_1+x_2)u + (x_2-x_1)v = 0</m>.     
+        </p>
+        <p>
+        Since <m>u</m> and <m>v</m> are linearly independent, this requires
+        <m>x_1 + x_2 = 0</m> and <m>x_2-x_1 =0</m>, which is only satisfied
+        when <m>x_1 = x_2 = 0</m>.  
+        </p>
+        <p>
+        This shows that the vector equation <m>x_1(u-v) + x_2(u+v) = 0</m> has
+        only the trivial solution <m>x_1 = x_2 = 0</m>, so <m>\{u-v, u+v\}</m>
+        is linearly independent.    
+        </p>    
+    </p>
+  </solution>
+
+  <exercise workspace="2in">
     <statement>
       <p>
         Which of the following are subspaces of <m>{\bf R}^4</m>?
@@ -84,4 +127,13 @@ a linear combination of <m>u</m> and <m>v</m>.
       </p>
     </statement>
   </exercise>    
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+       j
+      </p>
+    </statement>
+  </exercise>
+
 </worksheet>
