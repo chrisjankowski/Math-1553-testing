@@ -81,14 +81,11 @@ a linear combination of <m>u</m> and <m>v</m>.
 
   <solution>
     <p>
-        <p> True.</p>
-        <p> By the Basis Theorem, any two linearly independent vectors in <m>V</m>
+        <p> True. By the Basis Theorem, any two linearly independent vectors in <m>V</m>
         will form a basis for <m>V</m>, so we just need to show
-        <m>\{u-v, u+v\}</m> is linearly independent.
-        </p>
-        <p>
-        Suppose <m>x_1(u-v) + x_2(u+v) = 0</m>.  We expand and find
-        <m>(x_1+x_2)u + (x_2-x_1)v = 0</m>.     
+        <m>\{u-v, u+v\}</m> is linearly independent.  For this, suppose
+        <md>x_1(u-v) + x_2(u+v) = 0</md>.  We expand and find
+        <md>(x_1+x_2)u + (x_2-x_1)v = 0</md>.     
         </p>
         <p>
         Since <m>u</m> and <m>v</m> are linearly independent, this requires
