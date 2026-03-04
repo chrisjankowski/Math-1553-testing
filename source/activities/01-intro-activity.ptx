@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-01-intro-activity">
+  <title>Reading Day list</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      These are 50 problems for Reading Day in Spring 2026.
+    </p>
+  </introduction>
+
+  <!-- Exercises start here. -->
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        True or false: If <m>\{u, v, w\}</m> is a set of linearly dependent vectors, then <m>w</m> must be
+a linear combination of <m>u</m> and <m>v</m>.
+      </p>
+    </statement>
+  </exercise>   
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        Find the value of <m>k</m> that makes the following vectors linearly independent:
+        <m>\displaystyle
+          \left\{
+            \begin{pmatrix}
+          -3 \\ 0 \\ 3
+        \end{pmatrix},
+        \begin{pmatrix}
+         3 \\ -3 \\ k
+        \end{pmatrix},
+        \begin{pmatrix}
+        3 \\ -1 \\ -1
+        \end{pmatrix}
+        \right\}.
+        </m>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        True or false: If <m>\{u, v, w\}</m> is a set of linearly dependent vectors, then <m>w</m> must be
+a linear combination of <m>u</m> and <m>v</m>.
+      </p>
+    </statement>
+  </exercise>   
+
+   <exercise workspace="2in">
+    <statement>
+      <p>
+        True or false: If <m>\{u, v\}</m> is a basis for a subspace <m>W</m>, then
+        <m>\{u-v, u+v\}</m> is also a basis for <m>W</m>.        
+      </p>
+    </statement>
+  </exercise>    
+
+     <exercise workspace="2in">
+    <statement>
+      <p>
+        Which of the following are subspaces of <m>{\bf R}^4</m>?
+        <ol>
+        <li>The set
+        <m>W = \left\{ \begin{pmatrix} x \\ y \\ z \\ w  \end{pmatrix} \
+        \mathrm{ in } \ {\bf R}^{4} \ \Big| \ 2x - y - z = 0\right\}</m></li>
+        <li>The set of solutions to
+        <m> 
+        \begin{pmatrix}
+          1 \amp 0 \amp 1 \amp 0 \\
+          0 \amp 3 \amp 0 \amp -1
+        \end{pmatrix} x
+        =
+        \begin{pmatrix}
+          1 \\ 0
+        \end{pmatrix}
+        </m>
+        </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>    
+</worksheet>
