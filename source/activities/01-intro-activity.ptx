@@ -2,7 +2,7 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="activity-01-intro-activity">
-  <title>Reading Day list</title>
+  <title>Reading Day problems</title>
 
   <!-- Optional introduction -->
   <introduction>
@@ -65,7 +65,6 @@ a linear combination of <m>u</m> and <m>v</m>.
         third row is <m>-2</m> times the second, so <m>-3(-2) = k+3</m>, hence
         <m>k=3</m>.  Alternatively, the student could have computed <m>\det(A) =
         9 - 3k</m>, so <m>k=3</m>.
-
     </p>
   </solution>
 
@@ -124,6 +123,17 @@ a linear combination of <m>u</m> and <m>v</m>.
       </p>
     </statement>
   </exercise>    
+  <solution>
+    <p>
+      <ol>
+      <li>Yes, <m>W</m> is a subspace of <m>{\bf R}^4</m> since it is
+      <m>\mathrm{Nul}\begin{pmatrix} 2 \amp -1 \amp -1 \amp 0 \end{pmatrix}</m>.</li>
+      <li>No, it is not a subspace.  In fact, it fails the very first property of subspaces
+        since it does not contain
+      <m>\begin{pmatrix} 0 \\ 0 \\ 0 \\ 0 \end{pmatrix}</m>.</li>
+      </ol>
+    </p>
+  </solution>
 
   <exercise workspace="2in">
     <statement>
