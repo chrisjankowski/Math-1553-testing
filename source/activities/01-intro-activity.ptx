@@ -138,9 +138,51 @@ a linear combination of <m>u</m> and <m>v</m>.
   <exercise workspace="2in">
     <statement>
       <p>
-       j
-      </p>
+      True or false: The set <m>W</m> of vectors
+      <m> \begin{pmatrix} a \\ b \\ c  \end{pmatrix}</m> with <m>abc = 0</m>. Then
+      <m>W</m> is closed under addition.
+       </p>
     </statement>
   </exercise>
+
+    <solution>
+    <p> False.  For example, the vectors <m>u = \begin{pmatrix} 1 \\ 1 \\ 0  \end{pmatrix}</m>
+    and <m>v = \begin{pmatrix} 0 \\ 0 \\ 1  \end{pmatrix}</m> are in <m>W</m>, but
+    <m>u+v = \begin{pmatrix} 1 \\ 1 \\ 1  \end{pmatrix}</m> which is not in <m>W</m>
+    since <m>1 \cdot 1 \cdot 1 \neq 0</m>.
+    </p>
+    </solution>
+
+  <exercise workspace="2in">
+    <statement>
+     <p>
+      Write the matrices for each of the following.  
+      <ol>
+      <li>Counterclockwise rotation by <m>90^\circ</m>.</li>
+      <li>Reflection across the line <m>y = x</m>.</li>
+      <li>Clockwise rotation by <m>90^\circ</m></li>
+      <li>Reflection across the <m>x</m>-axis.</li>
+      <li>Reflection across the <m>y</m>-axis.</li>
+      </ol>
+     </p>
+    </statement>
+  </exercise>
+
+    <solution>
+    <p>
+    <ol>
+      <li>Counterclockwise rotation by <m>90^\circ</m>:
+      <m>\begin{pmatrix} 0 \amp -1 \\ 1 \amp 0  \end{pmatrix}</m>.</li>
+      <li>Reflection across the line <m>y = x</m>:
+      <m>\begin{pmatrix} 0 \amp 1 \\ 1 \amp 0  \end{pmatrix}</m>.</li>
+      <li>Clockwise rotation by <m>90^\circ</m>:
+      <m>\begin{pmatrix} 0 \amp 1 \\ -1 \amp 0  \end{pmatrix}</m>.</li>
+      <li>Reflection across the <m>x</m>-axis:
+      <m>\begin{pmatrix} 1 \amp 0 \\ 0 \amp -1  \end{pmatrix}</m>.</li>
+      <li>Reflection across the <m>y</m>-axis:
+      <m>\begin{pmatrix} -1 \amp 0 \\ 0 \amp 1  \end{pmatrix}</m>.</li>
+    </ol>
+    </p>
+    </solution>
 
 </worksheet>
