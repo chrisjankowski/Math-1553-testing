@@ -2,12 +2,14 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="activity-01-intro-activity">
-  <title>Reading Day problems</title>
+  <title>Studypalooza, Spring 2026</title>
 
   <!-- Optional introduction -->
   <introduction>
     <p>
-      These are 50 problems for Reading Day in Spring 2026.
+      There are 50 problems for the Studypalooza event for Reading Day in Spring 2026.  
+      They were compiled using PreTeXt with the specific intention of producing a PDF 
+      that meets the WCAG 2.0 accessibility guidelines.
     </p>
   </introduction>
 
@@ -185,4 +187,611 @@ a linear combination of <m>u</m> and <m>v</m>.
     </p>
     </solution>
 
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Find all <m>k</m> so that <m>\begin{pmatrix} 2 \\ k \\ 1  \end{pmatrix}</m>
+    and <m> \begin{pmatrix} k \\ 1 \\ -6  \end{pmatrix} </m> are orthogonal.
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    We set <m>0 = \begin{pmatrix} 2 \\ k \\ 1  \end{pmatrix} \cdot
+    \begin{pmatrix} k \\ 1 \\ -6  \end{pmatrix} = 2k+k-6</m>, so <m>k = 2</m>.
+    </p>
+    </solution>    
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Find all <m>k</m> so that the matrix transformation corresponding to the following
+    matrix is not onto:
+    <m> \displaystyle
+      \begin{pmatrix} 1 \amp 3 \amp 9 \\ 2 \amp 6 \amp k  \end{pmatrix}.
+    </m>
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    The columns of the matrix will span <m>${\bf R}^{2}$</m> unless they are all
+    collinear, in which case <m>k = 18</m>.  Alternatively, we could find <m>k</m>
+    by row-reducing and determining when the matrix will fail to have a pivot in the
+    second row.
+    </p>
+    </solution>   
+    
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Let <m>T: {\bf R}^a \to {\bf R}^b</m> be a transformation.      
+    Match the four statements with their corresponding terms listed below.
+    <ol>
+    <li>For each <m>y</m> in <m> {\bf R}^{b}</m>, there is at most
+    one <m>x</m> in <m> {\bf R}^{a} </m> so that <m>T(x) = y</m>.</li>
+    <li>For each <m>y</m> in <m> {\bf R}^{b}</m>, there is at least
+    one <m>x</m> in <m> {\bf R}^{a} </m> so that <m>T(x) = y</m>.</li>
+    <li>For each <m>y</m> in <m> {\bf R}^{b}</m>, there is at exactly
+    one <m>x</m> in <m> {\bf R}^{a} </m> so that <m>T(x) = y</m>.</li>
+    <li>For each <m>x</m> in <m> {\bf R}^{a}</m>, there is exactly
+    one <m>y</m> in <m>{\bf R}^{b}</m> so that <m>T(x) = y</m>.</li>
+    </ol>
+    </p>
+    <p>The terms are: "transformation," "one-to-one," "onto," and "invertible."</p> 
+    </statement>
+    </exercise>      
+    <solution>
+    <p>
+    <ol>
+    <li>One-to-one, directly from the definition.  This says that any <m>y</m>
+    in the codomain of <m>T</m> is the image of at most one <m>x</m>
+    in the domain.</li>
+    <li>Onto, directly from the definition.</li>
+    <li>Invertible: this statement says <m>T</m> is one-to-one and onto.</li>
+    <li>Transformation, directly from the definition.</li>
+    </ol>
+    </p>
+    </solution>    
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    True or false: Suppose <m>A</m> is a <m>4 \times 6</m> matrix.  Then the
+    dimension of the null space of <m>A</m> is at most <m>2</m>.
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    False.  Just take <m>A</m> to be the <m>4 \times 6</m> zero matrix, then
+    its null space has dimension <m>6</m>.
+    </p>
+    </solution>
+
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Complete the entries of <m>A</m> so that <m>\textrm{Col}(A)
+    = \textrm{Span}\left\{\begin{pmatrix} 1 \\ 2  \end{pmatrix}\right\}</m>
+    and
+    <m>\textrm{Nul}(A)
+    = \textrm{Span}\left\{\begin{pmatrix} 1 \\ 1  \end{pmatrix}\right\}</m>.
+    </p>
+    <p>
+    <m>\displaystyle A = \begin{pmatrix} r \amp 1 \\ s \amp 2  \end{pmatrix}.</m>
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    For <m>\textrm{Col}(A)</m> to be the desired line,
+    <m>\begin{pmatrix}  r \\ s\end{pmatrix}</m> must be a scalar multiple of
+     <m>\begin{pmatrix}  1 \\ 2\end{pmatrix}</m>.
+    </p>
+    <p>
+     We also need
+     <m>\begin{pmatrix} 1 \\ 1  \end{pmatrix}</m> to be in the null space of
+     <m>A</m>, and solving <m>A \begin{pmatrix} 1 \\ 1  \end{pmatrix} =
+     \begin{pmatrix} 0 \\ 0  \end{pmatrix}</m> gives us <m>r+1 = 0</m>
+     and <m>s+2 = 0</m>, so <m>r = -1</m> and <m>s = -2</m>.                             
+    </p>
+    </solution>
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Suppose <m>T: {\bf R}^7 \to {\bf R}^9</m> is a linear transformation with
+    standard matrix <m>A</m>, and suppose the range of <m>T</m> has a
+    basis consisting of <m>3</m> vectors.  What is the nullity of <m>A</m>?
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    We are given that the dimension of the range of <m>T</m> is <m>3</m>,
+    which means that the rank of <m>A</m> is <m>3</m>.  From the codomain
+    and domain of <m>T</m>, we know that <m>A</m> is a <m>9 \times 7</m>
+    matrix.  By the Rank Theorem:
+    <m>\displaystyle
+    \textrm{nullity}(A) = 7 - \textrm{rank}(A)
+    = 7 - 3 = 4</m>.
+    </p>
+    </solution>
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Define <m>T: {\bf R}^3 \to {\bf R}^4</m> by
+    <m>T(x,y,z) = (0, x-y, y-x, z)</m>. </p>
+    <p>Is <m>T</m> one-to-one? Is <m>T</m> onto?
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    No, <m>T</m> is not one-to-one.  One way to see this is that the equation
+    <m>T(v) = 0</m> has infinitely many solutions, since for any real number
+    <m>c</m> we get
+    <m>T(c, c, 0) = (0, c-c, c-c, 0) = (0, 0, 0, 0)</m>.
+    </p>
+    <p>
+    Also, <m>T</m> is not onto: every vector in the range of <m>T</m> has
+    <m>0</m> as its first entry, so for example <m>(1, 0, 0, 0)</m> is not in
+    the range of <m>T</m>.
+    </p>
+    </solution>
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Suppose <m>A</m> is a <m>7 \times 5</m> matrix and its null space is
+    a line, and let <m>T</m> be the matrix transformation <m>T(x) = Ax</m>.
+    What is true about the range of <m>T</m>?
+    </p>
+    <p>
+    <ol>
+    <li>It is a <m>4</m>-dimensional subspace of <m>{\bf R}^5</m>.</li>
+    <li>It is a <m>6</m>-dimensional subspace of <m>{\bf R}^7</m>.</li>
+    <li>It is a <m>4</m>-dimensional subspace of <m>{\bf R}^7</m>.</li>
+    <li>It is a <m>6</m>-dimensional subspace of <m>{\bf R}^5</m>.</li>
+    <li>none of these</li>
+    </ol>
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    Since <m>A</m> is <m>7 \times 5</m>, we know its column space is a subspace
+    of <m>{\bf R}^7</m>.  From the fact that the null space of <m>A</m> is a
+    line, we have <m>\textrm{rank}(A) = 5-1=4</m> by the Rank Theorem, so
+    the column space of <m>A</m> is <m>4</m>-dimensional.</p>
+    <p>
+    Since the range of <m>T</m>
+    is the column space of <m>A</m>, this means that the range of <m>T</m>
+    is a <m>4</m>-dimensional subspace of <m>{\bf R}^7</m>.
+    </p>
+    </solution>
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Say that <m>S: {\bf R}^2 \to {\bf R}^3</m> and
+    <m>T: {\bf R}^3 \to {\bf R}^4</m> are linear transformations.  Which one of the
+    following must be true about <m>T \circ S</m>?
+    </p>
+    <p>
+    <ol>
+    <li>It is one-to-one</li>
+    <li>It is not one-to-one</li>
+    <li>It is onto</li>
+    <li>The composition <m>T \circ S</m> is not defined</li>
+    <li>It is not onto</li>    
+    </ol>
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    The transformation <m>T \circ S</m> might be one-to-one.  For example,
+    if <m>S(x, y) = (x, y, 0)</m> and <m>T(x,y,z) = (x,y,z,0)</m>, then
+    <m>(T \circ S)(x, y) = (x, y, 0, 0)</m>, so this particular <m>T \circ S</m> is
+    one-to-one.
+    </p>
+    <p>
+    However, <m>T \circ S</m> cannot be onto because it corresponds to
+    multiplication by a <m>4 \times 2</m> matrix, which has a max of <m>2</m>
+    pivots and therefore cannot have a pivot in every row.
+    </p>
+    </solution>    
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    True or false: Suppose that <m>A</m> is an invertible <m>n \times n</m>
+    matrix.  Then <m>A+A</m> must be invertible.
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    True, since <m>(2A)^{-1} = \dfrac{1}{2} A^{-1}</m>.  To confirm this, we can 
+    compute
+    <m>(2A)\left(\dfrac{1}{2} A^{-1}\right) = \left(2 \cdot \dfrac{1}{2}\right)
+    AA^{-1} = I</m>, and similarly <m>\left(\dfrac{1}{2} A^{-1}\right)(2A) = I</m>.
+    </p>
+    </solution>  
+    
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    True or false: Suppose <m>A</m> is a <m>3 \times 3</m> matrix and the equation
+    <m>Ax = \begin{pmatrix} -1 \\ 3 \\ 2  \end{pmatrix}</m> has exactly one solution.
+    Then <m>A</m> must be invertible.
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    True. Since <m>Ax = \begin{pmatrix} -1 \\ 3 \\ 2  \end{pmatrix}</m> has
+    exactly one solution, we conclude <m>A</m> has a pivot in every column, so 
+    <m>A</m> is invertible by the Invertible Matrix Theorem.
+    </p>
+    </solution>
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Suppose <m>A</m> and <m>B</m> are <m>n \times n</m> matrices and
+    <m>AB</m> is not invertible.  Which one of the following must be true?
+    <ol>
+    <li><m>A</m> is not invertible.</li>
+    <li><m>B</m> is not invertible.</li>
+    <li>At least one of the matrices <m>A</m> and <m>B</m> is not
+    invertible.</li>
+    <li>none of these.</li>
+    </ol>
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    At least one of <m>A</m> and <m>B</m> is not invertible. One way to
+    see this is through the formula for the determinant.  Since <m>AB</m>
+    is not invertible, we know <m>0 = \det(AB) = \det(A) \det(B)</m>, so
+    it must be true that <m>\det(A) = 0</m> or <m>\det(B) = 0</m> (or both).
+    </p>
+    <p>
+    We cannot conclude that <m>A</m> is the one that must not be invertible,
+    or that <m>B</m> is the one that must not be invertible.  For example,
+    it could be the case that <m>A=I</m> and <m>B = 0</m>, or that
+    <m>A = 0</m> and <m>B = I</m>.
+    </p>
+    </solution>    
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Suppose <m>A</m> and <m>B</m> are <m>3 \times 3</m> matrices,
+    with <m>\det(A) = 3</m> and <m>\det(B) = -6</m>.  Find
+    <m>\det(2A^{-1}B)</m>.
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    Multiplying a <m>3 \times 3</m> matrix by <m>2</m> will multiply each row
+    of the matrix by <m>2</m>, so it will multiply the determinant by 
+    <m>8</m>.   
+    </p>
+    <p>
+    Using this fact and the properties of the determinant, we compute
+    <m>\displaystyle
+    \det(2A^{-1}B) = 8 \det(A^{-1}B) = 8 \det(A^{-1}) \det(B)
+    = 8 \cdot \dfrac{1}{3} \cdot (-6) = -16.
+    </m>
+    </p>
+    </solution>    
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Let <m>A</m> be the <m>3 \times 3</m> matrix satisfying
+    <m>A e_1 = e_3</m>, <m>A e_2 = e_2</m>, and <m>A e_3 = 2e_1</m>
+    (recall that <m>e_1</m>, <m>e_2</m>, and <m>e_3</m> are the standard
+    basis vectors of <m>{\bf R}^3</m>).
+    </p> 
+    <p>
+    Find <m>\det(A)</m>.
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    <m>A = \begin{pmatrix} A e_1 \amp A e_2 \amp A e_3  \end{pmatrix} </m>,
+    so
+    <m>\det(A) = \det \begin{pmatrix}
+                        0 \amp 0 \amp 2 \\
+                        0 \amp 1 \amp 0 \\
+                        1 \amp 0 \amp 0 \end{pmatrix}
+                      = -2.
+    </m>
+    </p>
+    </solution>   
+    
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Suppose <m>A</m> is a square matrix and <m>\lambda = -1</m> is an
+    eigenvalue of <m>A</m>.  Which one of the following must be true?
+    <ol>
+    <li><m>\textrm{Nul}(A+I) = \left\{0\right\}.</m></li>
+    <li><m>A</m> is invertible. </li>    
+    <li>The columns of <m>A</m> are linearly independent.</li>
+    <li>For some nonzero vector <m>x</m>, the vectors <m>Ax</m>
+    and <m>x</m> are linearly dependent.</li>
+    <li>The equation <m>Ax = x</m> has only the trivial solution.</li>    
+    </ol>
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    <ol>
+    <li>Not true, in fact <m>\textrm{Nul}(A+I)</m> must have dimension
+    at least <m>1</m> since <m>\lambda = -1</m> is an eigenvalue of <m>A</m>.
+    </li>
+    <li>Not necessarily true.  For example,
+    <m>A = \begin{pmatrix} -1 \amp 0 \\  0 \amp 0\end{pmatrix}</m>
+    is not invertible even though it has <m>\lambda = -1</m> as an eigenvalue.
+    </li>
+    <li>Not necessarily true.  For example, if
+    <m>A = \begin{pmatrix} -1 \amp 0 \\  0 \amp 0\end{pmatrix}</m>,
+    then <m>\lambda = -1</m> is an eigenvalue of <m>A</m>, but the
+    columns of <m>A</m> are not linearly independent.
+    </li>
+    <li>True: for any nonzero vector in the <m>(-1)</m>-eigenspace of <m>A</m>,
+    we have <m>Ax = -x</m>, so
+    <m>\left\{Ax, x\right\}</m> is a  linearly dependent set.
+    </li>
+    <li>Not necessarily true.  For example, if
+    <m>A = \begin{pmatrix} -1 \amp 0 \\  0 \amp 1\end{pmatrix}</m>
+    then <m>\lambda = -1</m> is an eigenvalue of <m>A</m>, but the
+    equation <m>Ax = x</m> has infinitely many solutions since
+    <m>\lambda = 1</m> is an eigenvalue of <m>A</m>.
+    </li>    
+    </ol>
+    </p>
+    </solution>
+    
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Suppose <m>A</m> is a <m>4 \times 4</m> matrix with characteristic
+    polynomial <m> -\lambda(1-\lambda)^2(5-\lambda).</m>
+    </p>
+    <p>
+    What is the rank of <m>A</m>?
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    From the characteristic polynomial of <m>A</m>, we see that
+    <m>\lambda = 0</m> is an eigenvalue of <m>A</m> with algebraic multiplicity
+    <m>1</m>, so its geometric multiplicity must also be <m>1</m>.  In other
+    words, the <m>0</m>-eigenspace is <m>1</m>-dimensional.  
+    </p>
+    <p>
+    Therefore,
+    <m>\textrm{rank}(A) = 4-1 = 3</m>.
+    </p>
+    </solution> 
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Let <m>T: {\bf R}^2 \to {\bf R}^2</m> be the linear transformation that
+    reflects across the line <m>x_2 = 2x_1</m>.  Find the value of <m>k</m>
+    so that <m>T \begin{pmatrix} 2 \\ k  \end{pmatrix}
+    = \begin{pmatrix} 2 \\ k  \end{pmatrix}</m>.
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    Recall that for any <m>2 \times 2</m> reflection matrix <m>A</m>, the line
+    of reflection is the <m>1</m>-eigenspace of <m>A</m>.  In other words,
+    <m>Ax = x</m> for every <m>x</m> on the line of reflection.
+    Here, the standard matrix for <m>T</m> is the matrix <m>A</m> that
+    reflects vectors across <m>x_2 = 2x_1</m>.
+    </p>
+    <p>
+    Therefore, to solve <m>T \begin{pmatrix} 2 \\ k  \end{pmatrix} =
+    \begin{pmatrix} 2 \\ k  \end{pmatrix}</m>, we need
+    <m> \begin{pmatrix} 2 \\ k  \end{pmatrix} </m> to be on the line
+    <m>x_2 = 2x_1</m>.  Thus <m>k = 2(2) = 4.</m>
+    </p>
+    </solution>    
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Find the value of <m>k</m> so that
+    <m> \begin{pmatrix} 1 \amp k \\ 1 \amp 3  \end{pmatrix} </m>
+    has one real eigenvalue with algebraic multiplicity <m>2</m>.
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    The characteristic polynomial of the matrix is
+    <m>\displaystyle (1-\lambda)(3-\lambda)-k
+    = \lambda^2 - 4\lambda + 3 - k = (\lambda-2)^2-1-k.</m>
+    </p>
+    <p>
+    For this polynomial to have only one real root with algebraic multiplicity
+    <m>2</m>, it must be a perfect square, so <m> -1-k = 0</m>,
+    thus <m>k = -1</m>.
+    </p>
+    </solution>    
+ 
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Suppose <m>A</m> is a diagonalizable matrix with characteristic polynomial
+    <m>\det(A-\lambda I) = (1-\lambda)^3(2-\lambda)(3-\lambda).</m>    
+    </p>
+    <p>
+    <ol>
+    <li>What is the dimension of the <m>1</m>-eigenspace of <m>A</m>?</li>
+    <li>For some <m>n</m>, the <m>1</m>-eigenspace of <m>A</m> is a subspace
+    of <m>{\bf R}^n</m>.  What is <m>n</m>?</li>
+    </ol>
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    <ol>
+    <li>Since <m>A</m> is diagonalizable and the eigenvalue <m>\lambda = 1</m> has
+    algebraic multiplicity <m>3</m>, the dimension of the <m>1</m>-eigenspace
+    must also equal <m>3</m>.</li>
+    <li> The characteristic polynomial of <m>A</m> has degree <m>5</m>, so the
+    matrix <m>A</m> must be <m>5 \times 5</m>.  This means the
+    <m>1</m>-eigenspace of <m>A</m> is a subspace of <m>{\bf R}^5</m>,
+    so <m>n = 5</m>.
+    </li>
+    </ol>
+    </p>
+    </solution>    
+
+    <exercise workspace="2in">
+    <statement>
+    <p>
+    Find the value of <m>t</m> so that <m>\lambda = 3</m> is an eigenvalue
+    of <m> \begin{pmatrix} 1 \amp t \amp 3 \\ 1 \amp 1 \amp 1 \\ 3 \amp 0 \amp 3
+           \end{pmatrix} </m>.
+    </p>
+    </statement>
+    </exercise>   
+    <solution>
+    <p>
+    We use the cofactor expansion along the third row to solve:
+    <m>0 = \det(A-3I)
+    = \det \begin{pmatrix}
+             -2 \amp t \amp 3 \\
+             1 \amp -2 \amp 1 \\
+             3 \amp 0 \amp 0
+           \end{pmatrix}
+    = 3(t+6),
+    </m>
+    so <m>t = -6</m>.
+    </p>
+    </solution>    
+
+    <exercise workspace="2in">
+    <statement>
+     <p>
+     Suppose <m>A</m> is a <m>2 \times 2</m> matrix with characteristic
+     polynomial <m>(1-\lambda)(2-\lambda).</m>  Find the characteristic
+     polynomial of <m>A^2</m>.
+     </p>
+    </statement>
+    </exercise>   
+     <solution>
+      <p>
+      We observe that if <m>\lambda</m> is an eigenvalue for a square matrix
+      <m>A</m>, then <m>\lambda^2</m> is an eigenvalue for <m>A^2</m>,
+      since for any <m>\lambda</m>-eigenvector <m>v</m> of <m>A</m>:
+      </p>
+      <p>
+      <m>A^2 v = A(Av) = A(\lambda v)= \lambda Av = \lambda(\lambda v)
+      = \lambda^2 v.</m>
+      </p>
+      <p>
+      Here, the eigenvalues of <m>A</m> are <m>\lambda = 1</m> and <m>\lambda = 2</m>,
+      so the eigenvalues of <m>A^2</m> are <m>1^2 = 1</m> and <m>2^2 = 4</m>.
+      These are the only possible eigenvalues of <m>A</m> since a <m>2 \times 2</m>
+      matrix has at most <m>2</m> eigenvalues.  Therefore, the characteristic polynomial
+      of <m>A^2</m> is <m>(1-\lambda)(4-\lambda)</m>.
+      </p>
+     </solution>    
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Suppose that <m>x</m> is an eigenvector of a matrix <m>A</m> corresponding
+     to <m>\lambda = 3</m> and that <m>x</m> is also an eigenvector of a matrix
+     <m>B</m> corresponding to <m>\lambda = 4</m>.
+     </p>
+     <p>
+     Determine if <m>x</m> an eigenvector for <m>2A-B</m>.  If so, find the
+     corresponding eigenvalue.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     We compute <m>(2A-B)(x) = 2Ax - Bx = 2(3x)-4x = 2x.</m>
+     Therefore, <m>x</m> is an eigenvector of <m>2A-B</m> corresponding
+     to the eigenvalue <m>\lambda = 2</m>.
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Suppose <m>A</m> is a <m>4 \times 4</m> matrix with eigenvalues
+     <m>0</m>, <m>1</m>, and <m>2</m>, where the eigenvalue <m>1</m>
+     has algebraic multiplicity <m>2</m>.  Which of the following statements
+     must be true? Select all that apply.
+     <ol>
+     <li><m>A</m> is not invertible. </li>
+     <li><m>A</m> is not diagonalizable. </li>
+     </ol>
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     <ol>
+     <li>True: <m>A</m> is not invertible, since it has <m>\lambda = 0</m> as
+     an eigenvalue. </li>
+     <li>Not necessarily true.  it is possible for <m>A</m> to be diagonalizable, 
+      for example
+     <m>A =
+     \begin{pmatrix}
+       0 \amp 0 \amp 0 \amp 0 \\
+       0 \amp 1 \amp 0 \amp 0 \\
+       0 \amp 0 \amp 1 \amp 0 \\
+       0 \amp 0 \amp 0 \amp 2
+     \end{pmatrix}.
+     </m>
+     </li>
+     </ol>
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     True or false: Suppose <m>A</m> is a <m>5 \times 5</m> matrix with real
+     entries.  Then <m>A</m> must have at least one real eigenvalue.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     True.  The characteristic polynomial of an <m>n \times n</m> matrix 
+     <m>A</m> is a degree <m>n</m> polynomial whose coefficients are real
+     numbers, and its roots (which occur in conjugate pairs)
+     are the eigenvalues of <m>A</m>.
+     </p>
+     <p> This guarantees <m>A</m> has at least one real eigenvalue if <m>n</m> 
+      is odd, which is the case here since <m>n=5</m>.
+     </p>
+     </solution>     
 </worksheet>
