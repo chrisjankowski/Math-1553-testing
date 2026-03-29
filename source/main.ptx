@@ -19,7 +19,7 @@
     <title>Course Documents</title>
 
     <!--   Course description -->
-    <xi:include href="./syllabus/syllabus.ptx" />
+    <xi:include href="./description/description.ptx" />
     <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
     
