@@ -794,4 +794,585 @@ a linear combination of <m>u</m> and <m>v</m>.
       is odd, which is the case here since <m>n=5</m>.
      </p>
      </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Suppose <m>A</m> is a positive stochastic matrix satisfying
+     <m>A \begin{pmatrix} 3/5 \\ 2/5  \end{pmatrix} =
+     \begin{pmatrix} 3/5 \\ 2/5  \end{pmatrix}</m>, and let
+     <m>v= \begin{pmatrix} 5 \\ 95  \end{pmatrix}</m>. 
+     </p>
+     <p>
+     As <m>n</m> gets very large, what vector does <m>A^n v</m> approach?
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     We are implicitly told that the steady-state vector for <m>A</m> is
+     <m>w = \begin{pmatrix} 3/5 \\ 2/5  \end{pmatrix}</m>, therefore
+     <m>A^n v</m> approaches <m>cw</m> as <m>n \to \infty</m>,
+     where <m>c</m> is the sum of entries in <m>v</m>.  Therefore,
+     </p>
+     <p>
+     <m>A^n v \to (5+95) \begin{pmatrix} 3/5 \\ 2/5  \end{pmatrix}
+     = 100 \begin{pmatrix} 3/5 \\ 2/5  \end{pmatrix}
+     = \begin{pmatrix} 60 \\ 40  \end{pmatrix}.</m>
+     </p>
+     </solution>
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Suppose <m>A</m> is a <m>4 \times 4</m> matrix with rank <m>2</m>.
+     Which one of the following must be true?
+     <ol>
+     <li> <m>A</m> must have four distinct eigenvalues. </li>
+     <li> <m>A</m> is not diagonalizable. </li>
+     <li> <m>A</m> is diagonalizable. </li>
+     <li> <m>A</m> cannot have four distinct eigenvalues. </li>     
+     </ol>
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     <ol>
+     <li> False: for example, take
+     <m>A =
+     \begin{pmatrix}
+       0 \amp 0 \amp 0 \amp 0 \\
+       0 \amp 0 \amp 0 \amp 0 \\
+       0 \amp 0 \amp 1 \amp 0 \\
+       0 \amp 0 \amp 0 \amp 1
+     \end{pmatrix}.
+     </m>
+     </li>
+     <li> False: for example, the matrix above is diagonalizable.</li>
+     <li> False: for example, take
+     <m>A =
+     \begin{pmatrix}
+       0 \amp 1 \amp 0 \amp 0 \\
+       0 \amp 0 \amp 0 \amp 0 \\
+       0 \amp 0 \amp 1 \amp 0 \\
+       0 \amp 0 \amp 0 \amp 0
+     \end{pmatrix}.
+     </m>
+     Then <m>A</m> has rank <m>2</m> and <m>\lambda = 0</m> has algebraic
+     multiplicity <m>3</m> but geometric multiplicity of only <m>2</m>, so
+     <m>A</m> is not diagonalizable.
+     </li>
+     <li> True.  Since <m>A</m> is a <m>4 \times 4</m> matrix with rank two,
+     its <m>0</m>-eigenspace (i.e. its null space) has dimension <m>4-2 = 2</m>.
+     Therefore, the algebraic multiplicity of <m>\lambda = 0</m> is at least
+     <m>2</m>.  Since the sum of algebraic multiplicities is <m>4</m>, this
+     means <m>A</m> has at most <m>3</m> eigenvalues. </li>
+     </ol>
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Suppose <m>A</m> is a <m>2 \times 2</m> matrix whose entries are real
+     numbers, and suppose that <m>\lambda = 1+i</m> is an eigenvalue of
+     <m>A</m> with corresponding eigenvector
+     <m> \begin{pmatrix} 2 \\ 1+i  \end{pmatrix} </m>.  Which one of the following
+     statements must be true?
+     <ol>
+     <li> <m>A</m> must have eigenvalue <m>1-i</m> with corresponding
+     eigenvector <m>\begin{pmatrix} 2 \\ 1+i  \end{pmatrix}</m>.</li>
+     <li> <m>A</m> must have eigenvalue <m>1-i</m> with corresponding
+     eigenvector <m>\begin{pmatrix} 2 \\ 1-i  \end{pmatrix}</m>.</li>
+     <li> <m>A</m> must have eigenvalue <m>1+i</m> with corresponding
+     eigenvector <m>\begin{pmatrix} 2 \\ 1-i  \end{pmatrix}</m>.</li>
+     <li> none of these </li>
+     </ol>
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     The answer is (b).
+     By the theory of complex eigenvalues, we know that if <m>\lambda</m>
+     is an eigenvalue of a real matrix <m>A</m> with eigenvector <m>v</m>, then
+     <m>\bar{\lambda}</m> is also an eigenvalue of <m>A</m> with eigenvector
+     <m>\bar{v}</m> (where <m>\bar{v}</m> means we take the complex conjugate
+     of each entry of <m>v</m>).
+     </p>
+     <p>
+     In the context of this problem, this means that
+     <m>\bar{\lambda} = 1-i</m> is an eigenvalue of <m>A</m> with
+     corresponding eigenvector
+     <m>\bar{v} = \begin{pmatrix} 2 \\ 1 - i  \end{pmatrix}</m>.
+     </p>
+     </solution>    
+     
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Let <m>T: {\bf R}^2 \to {\bf R}^2</m> be the linear transformation of rotation
+     <m>45^\circ</m> clockwise, and let <m>A</m> be the standard matrix for
+     <m>T</m>.
+     </p>
+     <p>
+     Which one of the following statements is true?
+     <ol>
+     <li> <m>A</m> has two distinct real eigenvalues.</li>
+     <li>  <m>A</m> has one complex eigenvalue with algebraic multiplicity
+     <m>2</m>.
+     </li>
+     <li> <m>A</m> has one real eigenvalue with algebraic multiplicity
+     <m>2</m>.</li>
+     <li> <m>A</m> has two distinct complex eigenvalues.</li>
+     </ol>
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     The answer is (d).
+     Let <m>v</m> be any nonzero vector in <m>{\bf R}^2</m>.
+     We know from geometry that <m>Av</m> is not on the same line through
+     the origin in <m>{\bf R}^2</m> as <m>v</m>.  In other words,
+     <m>Av</m> is not a real scalar multiple of <m>v</m>.
+     </p>
+     <p>
+     This shows that <m>A</m> has no real eigenvalues, so its eigenvalues
+     are complex.  Since <m>A</m> is a <m>2 \times 2</m> matrix with real
+     entries, these complex eigenvalues occur as a conjugate pair, so <m>A</m>
+     has two distinct complex eigenvalues.
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Suppose <m>u</m> and <m>v</m> are orthogonal unit vectors (recall that
+     "unit" vector means length <m>1</m>).  
+     </p>
+     <p>
+     Find the dot product <m>(3u-8v)\cdot 4u</m>.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+      We are given <m>||u||=||v||=1</m> and <m>u \cdot v = 0</m>.  
+     </p>
+     <p>
+     We compute:
+     </p>
+     <p>
+     <m>
+     \begin{align*}
+       (3u-8v)\cdot 4u \amp = (3u \cdot 4u) - (8v \cdot 4u) 
+       \\ \amp = 12 ||u||^2 - 32 v \cdot u 
+       \\ \amp = 12(1) -32(0) = 12
+     \end{align*}
+     </m>
+     </p>
+     </solution>    
+
+
+     
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Find all values of <m>k</m> so that
+     <m> \begin{pmatrix} 2 \\ k \\ 1  \end{pmatrix} </m> and
+     <m> \begin{pmatrix} k \\ 1 \\ -6  \end{pmatrix} </m> are orthogonal.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p> We solve:
+     <m>0 = \begin{pmatrix} 2 \\ k \\ 1  \end{pmatrix} \cdot
+     \begin{pmatrix} k \\ 1 \\ -6  \end{pmatrix} = 2k+k-6 = 3k-6
+     </m>, so <m>k = 2</m>.
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     True or false: If <m>W</m> is a subspace of <m>{\bf R}^{100}</m> and
+     <m>v</m> is in <m>W^\perp</m>, then the orthogonal projection of <m>v</m>
+     onto <m>W</m> must be the zero vector.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     True.  This is a geometric fact, but we can also see it through the
+     Orthogonal Decomposition Theorem: we are told that <m>v= v_{W^\perp}</m>,
+     so the orthogonal decomposition of <m>v</m> with respect to <m>W</m>
+     is <m>v = v_W + v_{W^\perp} = v_W + v</m>.
+     </p>
+     <p>
+     From the fact that <m>v = v_W + v</m> we get <m>v_W = 0</m>.  In other
+     words, the orthogonal projection of <m>v</m> onto <m>W</m> is the zero
+     vector.
+     </p>
+     </solution>          
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     True or false: Suppose <m>W</m> is a subspace of <m>{\bf R}^n</m>.
+     If <m>x</m> is a vector in <m>{\bf R}^n</m> and <m>x_W</m> is the
+     orthogonal projection of <m>x</m> onto <m>W</m>, then
+     <m>x \cdot x_W</m> must be <m>0</m>.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     False.  If <m>x</m> is a nonzero vector in <m>W</m>,
+     then <m>x = x_W</m> so
+     <m>x \cdot x_W = x \cdot x = ||x||^2>0</m>.
+     </p>
+     <p>As a specific example,
+     if <m>W</m> is the <m>x_1</m>-axis in <m>{\bf R}^2</m> and
+     <m>x = \begin{pmatrix} 1 \\ 0  \end{pmatrix}</m>, then
+     <m>x_W = \begin{pmatrix} 1 \\ 0  \end{pmatrix}</m> and
+     <m>x \cdot x_W = 1</m>.
+     </p>
+     </solution>     
+     
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Suppose <m>A</m> is an invertible <m>3 \times 3</m> matrix. What
+     is the dot product of the second row of <m>A</m> and the third
+     column of <m>AA^{-1}</m>?
+     <ol>
+      <li> <m>0</m>  </li>
+      <li> <m>1</m>  </li>
+      <li> <m>-1</m>  </li>
+      <li> <m>2</m>  </li>
+      <li> <m>-2</m>  </li>
+      <li> not enough info </li>     
+     </ol>
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     The answer is (a).  Recall that <m>AA^{-1} = I</m>, so the given product
+     is the entry in the second row and third column
+     of <m>I</m>, which is <m>0</m>.
+     </p>
+     </solution>
+     
+    <exercise workspace="2in">
+     <statement>
+     <p>
+     Find the orthogonal projection of
+     <m> \begin{pmatrix} 0 \\ 1  \end{pmatrix} </m> onto
+     <m> \textrm{Span}
+     \left\{\begin{pmatrix} 1 \\ 2  \end{pmatrix} \right\}.
+     </m>
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     The matrix for projection is
+     </p>
+     <p>
+     <m>\dfrac{1}{u \cdot u} uu^T
+     = \dfrac{1}{1+4} \begin{pmatrix} 1 \\ 2  \end{pmatrix}
+     \begin{pmatrix} 1 \amp 2  \end{pmatrix}
+     = \dfrac{1}{5} \begin{pmatrix} 1 \amp 2 \\ 2 \amp 4 \end{pmatrix}.
+     </m>
+     </p>
+     <p>
+     Therefore, our answer is
+     <m>\dfrac{1}{5} \begin{pmatrix} 1 \amp 2 \\ 2 \amp 4 \end{pmatrix}
+     \begin{pmatrix} 0 \\ 1  \end{pmatrix} =
+     \begin{pmatrix} 2/5 \\ 4/5  \end{pmatrix}.
+     </m>
+     </p>
+     </solution>
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Find the orthogonal projection of
+     <m> \begin{pmatrix} 6 \\ 5 \\ 4 \end{pmatrix} </m> onto
+     <m> \textrm{Span}\left\{
+      \begin{pmatrix} 1 \\ 0 \\ 1  \end{pmatrix},
+      \begin{pmatrix} 1 \\ 1 \\ 0  \end{pmatrix}
+      \right\}.
+     </m>
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     With
+     <m> A = \begin{pmatrix}
+               1 \amp 1 \\
+               0 \amp 1 \\
+               1 \amp 0  \end{pmatrix},
+     </m>
+     we solve <m>A^TAx = A^T \begin{pmatrix} 6 \\ 5 \\ 4  \end{pmatrix}</m>.
+     </p>
+     <p>
+     This gives
+     <m> \begin{pmatrix} 2 \amp 1 \\ 1 \amp 2  \end{pmatrix} x
+     = \begin{pmatrix} 10 \\ 11  \end{pmatrix} </m>, so
+     <m>x = \begin{pmatrix} 3 \\ 4  \end{pmatrix}</m> and the projection
+     is <m>Ax = \begin{pmatrix} 7 \\ 4 \\ 3  \end{pmatrix}.</m>
+     </p>
+     </solution>
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Let <m>B</m> be the standard matrix for the orthogonal projection of
+     <m>{\bf R}^3</m> onto
+     <m>W =
+     \left\{ \begin{pmatrix} x \\ y \\ z   \end{pmatrix}
+     \textrm{ in } {\bf R}^3 \ \Big| \ x + y + 2z = 0
+     \right\}.
+     </m>
+     </p>
+     <p>
+     What is the dimension of the <m>1</m>-eigenspace of <m>B</m>?
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     Orthogonal projection onto a subspace fixes all vectors in that subspace,
+     so <m>Bx = x</m> for all <m>x</m> in <m>W</m>.  Since
+     <m>\textrm{dim}(W) = 2</m>, the <m>1</m>-eigenspace of <m>B</m>
+     has dimension <m>2</m>.
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Let <m>W</m> be the subspace of <m>{\bf R}^4</m> given by all vectors
+     <m> \begin{pmatrix} x \\ y \\ z \\ w  \end{pmatrix}</m> satisfying
+     <m>x+y+z+w=0</m>.  Find the dimension of <m>W^\perp</m>.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p> Note that 
+     <m>
+     W = \textrm{Nul}\begin{pmatrix} 1 \amp 1 \amp 1 \amp 1\end{pmatrix},
+     </m>
+     and the system
+     <m>
+     \left(
+      \begin{array}{cccc|c} 1 \amp 1 \amp 1 \amp 1 \amp 0  \end{array}
+     \right)
+     </m>
+     has <m>3</m> free variables, so <m>\dim(W) = 3</m>.
+     </p>
+     <p>
+     Since <m>W</m> is a subspace of <m>{\bf R}^4</m>, it follows that
+     <m>4 = \dim(W) + \dim(W^{\perp}) = 3 + \dim(W^{\perp})</m>,
+     so <m>\dim(W^{\perp}) = 1</m>.
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     True or false: If <m>b</m> is a vector in the column space of a matrix
+     <m>A</m>, then every solution to <m>Ax = b</m> is also a least-squares
+     solution to <m>Ax = b</m>.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     True.  The idea behind least squares for <m>Ax = b</m> is to solve for
+     <m>x</m> so that <m>Ax</m> is the closest vector to <m>b</m> in the
+     column space of <m>A</m>.  But if <m>b</m> is already in the column
+     space of <m>A</m>, then that "closest" vector is just <m>b</m> itself, so
+     we are just solving <m>Ax = b</m>.
+     </p>
+     <p>
+     We give an alternative explanation using purely algebraic tools.
+     Since <m>b</m> is in <m>\textrm{Col}(A)</m>, we have
+     <m>b = b_{\textrm{Col}(A)}</m>.  Therefore, the equation
+     <m>Ax = b</m> is identical to the least-squares equation
+     <m>Ax = b_{\textrm{Col}(A)}</m>.
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     True or false: If <m>A</m> is an <m>m \times n</m> matrix, <m>b</m> is
+     in <m>{\bf R}^m</m>, and <m>\hat{x}</m> is a least-squares solution to
+     <m>Ax = b</m>, then <m>\hat{x}</m> is the point in <m>\textrm{Col}(A)</m>
+     that is closest to <m>b</m>.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     False: <m>A \hat{x}</m> is the closest point to <m>b</m> in the column
+     space of <m>A</m>.
+     </p>
+     </solution>
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Find the least-squares solution <m>\hat{x}</m> to
+     <m> \begin{pmatrix} 6 \\ -2 \\ -2  \end{pmatrix} x
+     = \begin{pmatrix} 14 \\ -2 \\ 0  \end{pmatrix}. </m>
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     Here <m>A = \begin{pmatrix} 6 \\ -2 \\ -2  \end{pmatrix}</m> and
+     <m>b = \begin{pmatrix} 14 \\ -2 \\ 0  \end{pmatrix}.</m> Solving
+     <m>A^T A \hat{x} = A^T b</m> gives
+     <m>
+     \begin{pmatrix} 6 \amp -2 \amp -2  \end{pmatrix}
+     \begin{pmatrix} 6 \\ -2 \\ -2  \end{pmatrix}
+     =
+     \begin{pmatrix} 6 \amp -2 \amp -2  \end{pmatrix}
+     \begin{pmatrix} 14 \\ -2 \\ 0  \end{pmatrix}.
+     </m>
+     </p>
+     <p>
+     Computing both sides gives <m>44 \hat{x} = 88</m>,
+     so <m>\hat{x} = 2.</m>
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Find the best fit line <m>y = Mx + B</m> for the data points below using
+     least squares: <m>(-7, -22)</m>, <m>(0, -2)</m>, and <m>(7, 6)</m>.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     Just by plotting the points, we can tell that there is clearly no line
+     through all three of them, so the corresponding system of equations
+     written below is inconsistent.
+     </p>
+     <p>
+     <m>
+     \begin{align*}
+       -22 \amp = -7M + B, \\
+       -2 \amp = 0M + B, \\
+       6 \amp = 7M + B.
+     \end{align*}
+     </m>
+     </p>
+     <p>
+     This is the system <m>Ax = b</m> given by
+     <m>
+     \begin{pmatrix} -7 \amp 1 \\ 0 \amp 1 \\ 7 \amp 1  \end{pmatrix} x
+     = \begin{pmatrix} -22 \\ -2 \\ 6  \end{pmatrix}.
+     </m>
+     </p>
+     <p>
+     Solving <m>A^T A \hat{x} = A^T b</m>, we get
+     <m>A^T A = \begin{pmatrix} 98 \amp 0 \\ 0 \amp 3  \end{pmatrix}</m> and
+     <m>
+     A^T \begin{pmatrix}  -22 \\ -2 \\ 6  \end{pmatrix}
+     = \begin{pmatrix} 196 \\ -18  \end{pmatrix}.
+     </m>
+     Solving
+     <m>
+     \left(\begin{array}{cc|c}
+       98 \amp 0 \amp 196 \\ 0 \amp 3 \amp -18 
+     \end{array}\right)
+     </m>
+     gives <m>\hat{x} = \begin{pmatrix} 2 \\ -6  \end{pmatrix}</m>, so the line
+     is <m>y = 2x - 6.</m>
+     </p>
+     </solution>     
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Let
+     <m>
+     A =
+     \begin{pmatrix} 4 \amp 1 \\ 5 \amp 2 \end{pmatrix}
+     \begin{pmatrix} -3 \amp 0 \\ 0 \amp -1 \end{pmatrix}
+     \begin{pmatrix} 4 \amp 1 \\ 5 \amp 2 \end{pmatrix}^{-1}.
+     </m>
+     Find <m>A^3 \begin{pmatrix} 1 \\ 2  \end{pmatrix}.</m>
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     The matrix <m>A</m> has been diagonalized for us.
+     </p>
+     <p> Note that
+     <m> \begin{pmatrix} 1 \\ 2  \end{pmatrix}</m> spans the
+     <m>(-1)</m>-eigenspace of <m>A</m>, so
+     <m>A \begin{pmatrix} 1 \\ 2  \end{pmatrix}
+     = \begin{pmatrix} -1 \\ -2  \end{pmatrix}.
+     </m>
+     </p>
+     <p>
+     Repeated multiplication by <m>A</m> just flips
+     <m> \begin{pmatrix} 1 \\ 2  \end{pmatrix}</m> back and forth between
+     itself and its negative, so we get
+     <m>A^2 \begin{pmatrix} 1 \\ 2  \end{pmatrix}
+     = \begin{pmatrix} 1 \\ 2  \end{pmatrix}
+     </m> and
+     <m>A^3 \begin{pmatrix} 1 \\ 2  \end{pmatrix}
+     = \begin{pmatrix} -1 \\ -2  \end{pmatrix}.
+     </m>
+     </p>
+     </solution>
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     True or false: If <m>A</m> is a diagonalizable <m>6 \times 6</m> matrix,
+     then <m>A</m> has <m>6</m> different eigenvalues.     
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     False.  Just take <m>A</m> to be the <m>6 \times 6</m> identity matrix.
+     Then <m>A</m> is diagonalizable (in fact, diagonal!) but it only has one
+     eigenvalue, namely <m>\lambda = 1</m>.
+     </p>
+     </solution>
+
+     <exercise workspace="2in">
+     <statement>
+     <p>
+     Find the eigenvalues of
+     <m>A = \begin{pmatrix} 1 \amp 4 \\ 4 \amp 7  \end{pmatrix}</m>.
+     </p>
+     </statement>
+     </exercise>   
+     <solution>
+     <p>
+     We solve:
+     <m>0 = \det(A-\lambda I) = (1-\lambda)(7-\lambda)-16
+     = \lambda^2-8\lambda-9 = (\lambda+1)(\lambda-9).</m>
+     </p>
+     <p>
+     Therefore, the eigenvalues of <m>A</m> are
+     <m>\lambda = -1</m> and <m>\lambda = 9</m>.
+     </p>
+     </solution>     
 </worksheet>
