@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+  <title>Midterm 1, Fall 2024</title>
+  <introduction>
+    <p>
+    
+    <alert>Note:</alert> For accessibility reasons, the format of this exam will
+    look slightly different than the paper copy of the exam taken by the
+    students.  For example, students in the course are required to write their
+    name and student ID legibly and circle their lecture.  Also, some of the
+    questions in problems 1-4 are multiple choice questions on the paper exam
+    (often with 10+ choices), but they will sometimes be worded here as if they
+    are fill-in-the-blank questions.
+      
+    </p>
+    <p><alert>Instructions:</alert>
+    <ul>
+    
+    <li>Write your initials at the top of each page. The maximum score on this
+    exam is 70 points, and you have 75 minutes to complete it.  Each problem is
+    worth 10 points.</li>
+  
+    <li>Calculators and cell phones are not allowed.  Aids of any kind (notes,
+    text, etc.)\ are not allowed.  If you use pen, you must use black ink.</li>
+    
+    <li>As always, RREF means reduced row echelon form.
+    The zero vector in <m>{\bf R}^n</m> is the vector in <m>{\bf R}^n</m> whose
+    entries are all zero.</li>
+    
+    <li>On free response problems, show your work, unless instructed otherwise.
+    A correct answer without appropriate work may receive little or no credit!
+    </li>
+    
+    <li>We will hand out loose scrap paper, but it <strong> will not be graded </strong>
+    under any circumstances.  All answers and work must be written on the exam
+    itself, with no exceptions. </li>
+
+    <li>This exam is double-sided.  You should have enough space to do every
+    problem on the exam, but if you need extra space, you may use the <em>back
+    side of the very last page of the exam</em>.  If you do this, you must
+    clearly indicate it.</li>
+    
+    <li>You may cite any theorem proved in class or in the sections we covered
+    in the text.</li>
+
+    <li>For questions with bubbles, either fill in the bubble completely or
+    leave it blank.  <strong> Do not </strong> mark any bubble with X or / or any
+    such intermediate marking.  Anything other than a blank or filled bubble may
+    result in a 0 on the problem, and regrade requests may be rejected without
+    consideration.</li>
+    </ul>
+    </p>
+  </introduction>
+
+  <page>
+    <exercise>
+      <statement>
+        <p>
+        TRUE or FALSE.  Clearly fill in the bubble for your answer.  If the
+        statement is <em>ever</em> false, fill in the bubble for False.  You do
+        not need to show any work, and there is no partial credit.  Each
+        question is worth 2 points.
+        <ol>
+
+        <li> If the RREF of an augmented matrix has bottom row <m>
+        \left(\begin{array}{ccc|c} 0 \amp 1 \amp 0 \amp -5\end{array}\right)</m>, then its
+        corresponding system of linear equations must be consistent. </li>
+
+        <li> If a consistent system of linear equations has more equations than
+        variables, then the system must have exactly one solution. </li>
+
+        <li> Suppose <m>u</m>, <m>v</m>, and <m>w</m> are vectors in <m>{\bf
+          R}^3</m> and <m>\textrm{Span}\{u, v, w\} = {\bf R}^3</m>.  If <m>b</m> is any
+        vector in <m>{\bf R}^{3}</m>, then the vector equation <m>x_1 u + x_2 v
+        + x_3 w = b</m> must have exactly one solution. </li>
+
+        <li> There is a <m>2 \times 2</m> matrix <m>A</m> so that the set of
+        solutions to <m>A\begin{pmatrix} x \\ y \end{pmatrix} =
+        \begin{pmatrix} 0 \\ 0 \end{pmatrix}</m> is the line <m>y = x -
+        1</m>. </li>
+
+        <li> If <m>A</m> is an <m>m \times n</m> matrix and <m>m>n</m>, then the
+        homogeneous matrix equation <m>Ax = 0</m> must have infinitely many
+        solutions. </li>
+        </ol>
+        </p>
+        </statement>
+     </exercise>
+
+     <solution>
+      <p>
+      <ol>
+      <li>True, since this means the rightmost column does not have a pivot. </li>
+      
+      <li> False: for example, consider the system for
+      <m>\left(\begin{array}{cc|c}1 \amp 0 \amp 0 \\
+                 0 \amp 0 \amp 0 \\ 0 \amp 0 \amp 0\end{array}\right).</m>
+      </li>
+      
+      <li>True.  Since <m>u, v, w</m> are vectors in <m>{\bf R}^{3}</m> and
+      their span is <m>{\bf R}^{3}</m>, the <m>3 \times 3</m> matrix with
+      columns <m>u</m>, <m>v</m>, and <m>w</m> will have a pivot in every row
+      and column, so any augmented matrix
+      <m>\left(\begin{array}{ccc|c}u \amp v \amp w \amp b \end{array}\right)</m>
+      will row-reduce
+      to the following general form no matter what <m>b</m> is, so we will get
+      exactly one solution.
+      <m>\left(\begin{array}{ccc|c}
+                 1 \amp 0 \amp 0 \amp (*)_1 \\
+                 0 \amp 1 \amp 0 \amp (*)_2 \\
+                 0 \amp 0 \amp 1 \amp (*)_3
+                 \end{array} \right).
+      </m>
+      </li>
+
+      <li> False: the equation <m>A\begin{pmatrix} x \\ y \end{pmatrix} =
+      \begin{pmatrix} 0 \\ 0 \end{pmatrix} </m> is homogeneous, so
+      it must have the trivial solution
+      <m>\begin{pmatrix}x \\ y \end{pmatrix}= \begin{pmatrix}0 \\ 0 \end{pmatrix}</m>.
+      However, the line <m>y = x-1</m> does not contain
+      <m>\begin{pmatrix}0 \\ 0 \end{pmatrix}</m>.</li>
+      
+      <li>False: for example, if
+      <m>A = \begin{pmatrix} 1 \amp 0 \\  0 \amp 1 \\ 0 \amp 0 \end{pmatrix}</m>, then
+      <m>Ax=0</m> has only the trivial solution <m>x = 0</m>.</li>
+      
+      </ol>
+      </p>
+     </solution>
+
+  </page>
+
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          This is the second problem.
+        </p>
+      </statement>
+    </exercise>
+  </page>
+</worksheet>
+

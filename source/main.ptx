@@ -24,22 +24,21 @@
     </chapter>
     
     
-    <!--
+    
     <chapter xml:id="course-notes">
-      <title>Course Notes</title>
+      <title>Old Exams</title>
 
       <introduction>
         <p>
-          The following notes are intended to remind you what we covered each week.
-          They are not a substitute for attending class and not a substitute for reading the textbook.
+          I am planning to put some exams in fully accessible format here.
         </p>
       </introduction>
 
-      <xi:include href="./notes/week01.ptx"/>
-      <xi:include href="./notes/week02.ptx"/>
+      <xi:include href="./exams/e1-f24.ptx"/>
+      <!--<xi:include href="./notes/week02.ptx"/>-->
       
     </chapter>
-    -->
+    
 
 
     <chapter xml:id="activities">
