@@ -18,6 +18,24 @@
         This is the first exercise.
       </p>
     </statement>
-  </exercise>
+  </exercise>            
+    <solution>
+      <p>
+        hey
+      </p>
+    </solution>
+
+    <exercise workspace="2in">
+    <statement>
+      <p>
+        This is the second exercise.
+      </p>
+    </statement>
+    </exercise>            
+    <solution>
+      <p>
+        hey
+      </p>
+    </solution>
 
 </worksheet>

@@ -35,7 +35,8 @@
       </introduction>
 
       <xi:include href="./exams/e1-f24.ptx"/>
-      <!--<xi:include href="./notes/week02.ptx"/>-->
+
+      <!--<xi:include href="./exams/test-sheet.ptx"/>-->
       
     </chapter>
     
@@ -54,6 +55,8 @@
       <xi:include href="./activities/01-intro-activity.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
+      <!-- <xi:include href="./activities/activity-template.ptx"/> -->
+
     </chapter>
 
     <!-- <chapter xml:id="handouts"> -->

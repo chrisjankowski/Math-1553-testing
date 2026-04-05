@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet>
-  <title>Midterm 1, Fall 2024</title>
+<worksheet xml:id="e1-f24">
+  <title>Exam 1, Fall 2024</title>
   <introduction>
     <p>
     
@@ -22,7 +22,7 @@
     worth 10 points.</li>
   
     <li>Calculators and cell phones are not allowed.  Aids of any kind (notes,
-    text, etc.)\ are not allowed.  If you use pen, you must use black ink.</li>
+    text, etc.) are not allowed.  If you use pen, you must use black ink.</li>
     
     <li>As always, RREF means reduced row echelon form.
     The zero vector in <m>{\bf R}^n</m> is the vector in <m>{\bf R}^n</m> whose
@@ -52,6 +52,7 @@
     </ul>
     </p>
   </introduction>
+
 
   <page>
     <exercise>
@@ -85,9 +86,8 @@
         solutions. </li>
         </ol>
         </p>
-        </statement>
-     </exercise>
-
+      </statement>
+     </exercise>           
      <solution>
       <p>
       <ol>
@@ -123,22 +123,160 @@
       
       <li>False: for example, if
       <m>A = \begin{pmatrix} 1 \amp 0 \\  0 \amp 1 \\ 0 \amp 0 \end{pmatrix}</m>, then
-      <m>Ax=0</m> has only the trivial solution <m>x = 0</m>.</li>
-      
+      <m>Ax=0</m> has only the trivial solution <m>x = 0</m>.</li>   
       </ol>
       </p>
      </solution>
-
   </page>
 
   <page>
     <exercise>
       <statement>
         <p>
-          This is the second problem.
+        Multiple choice and short answer.  You do not need to show work or
+        justify your answers.  Parts (a) through (d) are unrelated. Parts (a)
+        and (d) are worth 3 points each, while parts (b) and (c) are worth 2
+        points each.
+        </p>
+        <p>
+        <ol>
+        <li> <p> Which of the following matrices are in reduced row echelon form (RREF)?
+        Select all that apply. </p>
+          <ol>
+          <li>
+          <m>\begin{pmatrix} 1 \amp 6 \amp 1 \amp 0  \amp 2
+               \\ 0 \amp 0 \amp 0 \amp 1 \amp 0 \end{pmatrix} </m> 
+          </li>
+
+          <li>
+          <m>\begin{pmatrix}1 \amp -3 \amp 0 \amp 7 \amp 0
+               \\ 0 \amp 0 \amp 1 \amp 4 \amp 0\\ 0 \amp 0 \amp 0 \amp 0 \amp 1
+             \end{pmatrix} </m> 
+          </li>
+
+          <li>
+          <m>\begin{pmatrix}1 \amp 3 \amp 0 \amp 1 \amp 0
+               \\ 0 \amp 0 \amp 1 \amp 0 \amp 0\\ 0 \amp 0 \amp 0 \amp 1 \amp0
+               \\ 0 \amp 0 \amp 0 \amp 0 \amp 0 \end{pmatrix}</m> 
+          </li>
+          </ol>
+        </li> 
+
+         <li>        
+         <p> Suppose an augmented matrix with 3 rows and 5 columns (including
+         its rightmost column) has 3 pivots and corresponds to a consistent
+         system of linear equations.  Clearly mark your answer for each of the
+         following. </p>
+              <ol>
+                 <li> <p> The solution set is: </p>
+                  <ul>
+                   <li> a point </li>
+                   <li> a line </li>
+                   <li> a plane </li>
+                   <li> <m>{\bf R}^{3}</m> </li>
+                   <li> <m>{\bf R}^{4}</m> </li>
+                  </ul>
+                 </li>
+
+
+                 <li> <p> The solution set lives in: </p>
+                  <ul>
+                   <li> <m>{\bf R} </m></li>
+                   <li> <m>{\bf R}^{3}</m></li>
+                   <li> <m>{\bf R}^{3}</m></li>
+                   <li> <m>{\bf R}^{4}</m></li>
+                   <li> <m>{\bf R}^{5}</m></li>
+                  </ul>
+                 </li>                 
+              </ol>              
+          </li>
+
+        <li>
+        <p>In each case, answer whether the equation in the variables <m>x</m>,
+        <m>y</m>, and <m>z</m> is linear or not linear.
+        </p>
+           <ol>
+              <li> <m>3x - y - yz = 3.</m> </li>
+              <li> <m>4x + 11^{1/3} y + 3z = 2.</m> </li>
+           </ol>
+        </li>
+        
+        <li>
+        <p> Suppose that the solution set to a matrix equation <m>Ax = b</m> has
+        parametric form </p>
+        <p>
+        <m> x_1 = 3 - x_3, \qquad x_2 = 1 + x_3, \qquad x_3 = x_3 \ (x_3 \textrm{
+            real}), \qquad x_4 =0.</m>
+         </p>
+         <p>
+         Which of the following statements <strong>must</strong> be true?  Clearly mark all
+         that apply.
+         </p>
+            <ol>
+             <li>The vector <m>\begin{pmatrix} -1 \\ 1 \\ 1 \\ 0 \end{pmatrix}</m>
+               is a solution to the homogeneous matrix equation <m>Ax = 0</m>.</li>
+             <li><m>b</m> is a vector in <m>{\bf R}^{4}</m>.</li>
+             <li>The matrix <m>A</m> has <m>4</m> columns.</li>
+            </ol>
+        </li>
+        </ol>
         </p>
       </statement>
-    </exercise>
-  </page>
+    </exercise>                  
+      <solution>
+        <p>
+         <ol>
+         <li> Matrices (i) and (ii) are in RREF, but (iii) is not because its final pivot has a non-zero
+         entry in its column. </li>
+
+         <li> Since the augmented matrix has 5 columns including the rightmost
+         column, there are 4 columns for the variables, therefore the solution
+         set lives in <m>{\bf R}^{4}</m>.  Since there are 3 pivots in the four left
+         columns, this means we have <m>4-3 = 1</m> free variable, so the solution
+         set is a line.
+         </li>
+
+         <li>The first is not linear because of its <m>yz</m> term.  The second is linear.</li>
+
+         <li> <p>For this problem, we use the fact that a solution set for a
+         consistent system <m>Ax=b</m> is obtained by taking one particular solution
+         and adding all homogeneous solutions.  If we write the solution set in
+         parametric vector form, we will get </p>
+         <p>
+         <m> \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4  \end{pmatrix}
+         = \begin{pmatrix} 3-x_3 \\ 1+x_3 \\ x_3 \\ 0  \end{pmatrix}
+         = \begin{pmatrix} 3 \\ 1 \\ 0 \\ 0  \end{pmatrix}
+         + x_3 \begin{pmatrix} -1 \\ 1 \\ 1 \\ 0  \end{pmatrix}.
+         </m>
+         </p>
+
+         <p>Thus, we see
+         <m>\begin{pmatrix} 3 \\ 1 \\ 0 \\ 0 \end{pmatrix}</m>
+         is a solution to <m>Ax=b</m>, and
+        <m>\begin{pmatrix} -1 \\ 1 \\ 1 \\ 0  \end{pmatrix}</m>
+        is a solution to <m>Ax = 0</m>.
+         </p>
+             <ol>
+                 <li> Yes, the vector is a solution to <m>Ax=0</m> as described above.</li>
+                 <li> No, <m>b</m> is not necessarily in <m>{\bf R}^{4}</m>.
+                 For example, we could have
+                 <m> A = \begin{pmatrix}
+                         1 \amp 0 \amp 1 \amp 0 \\
+                         0 \amp 1 \amp -1 \amp 0 \\
+                         0 \amp 0 \amp 0 \amp 1 \end{pmatrix},
+                       \qquad
+                       b = \begin{pmatrix} 3 \\ 1 \\ 0  \end{pmatrix}</m>.
+                  </li>
+                  <li>Yes, <m>A</m> must have 4 columns because we were told that the solution
+                  set lives in <m>{\bf R}^{4}.</m></li>                       
+             </ol>
+        </li>
+       </ol>
+        </p>  
+        </solution>       
+  </page>  
+
+
+
 </worksheet>
 

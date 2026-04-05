@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="test-sheet">
+  <title>Activity Title</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      This is the introduction to the activity.
+    </p>
+  </introduction>
+
+  <!-- Exercises start here. -->
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        This is the first exercise.
+      </p>
+    </statement>
+  </exercise>            
+    <solution>
+      <p>
+        hey
+      </p>
+    </solution>
+
+    <exercise workspace="2in">
+    <statement>    
+  <p>(3 points) Which of the following matrices are in RREF? Fill in the bubble for all that apply.</p>
+  <checkboxes>
+    <correct>
+      <m>
+        \left(\begin{array}{ccc|c}
+        1 &amp; 1 &amp; 1 &amp; 0 \\
+        0 &amp; 0 &amp; 0 &amp; 1
+        \end{array}\right)
+      </m>
+    </correct>
+    <correct>
+      <m>
+        \left(\begin{array}{cccc|c}
+        1 &amp; 5 &amp; -3 &amp; 0 &amp; 9 \\
+        0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+        0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+        \end{array}\right)
+      </m>
+      </correct>
+      <choice>
+      <m>
+        \left(\begin{array}{cccc|c}
+        0 &amp; 1 &amp; -5 &amp; 1 &amp; 0 \\
+        0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+        \end{array}\right)
+      </m>
+      </choice>
+      </checkboxes>
+      </p>
+    </statement>
+    </exercise>            
+    <solution>
+      <p>
+        hey
+      </p>
+    </solution>
+
+</worksheet>
